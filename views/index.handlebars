@@ -3,10 +3,9 @@
             <h1 class="text-center">Eat My Burger!</h1>
     </div>
     <div class="row text-center"> 
-        <form method="POST" action="/burgers/createOne" class="form-inline">
+        <form method="POST" action="/burgers/insertOne" class="form-inline">
             <div class="form-group">
                 <input type="hidden" name="devoured" value="0"/>
-                <label class="sr-only" for="burger-input">Delicious burger</label>
                 <input name="burger" type="text" class="form-control" id="burger-input" placeholder="Your order"/>
             </div>
             <button type="submit" class="btn btn-primary id="submit" btn-sm">

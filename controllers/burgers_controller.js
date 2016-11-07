@@ -12,7 +12,7 @@ var burgers = require("../models/burger.js");
 		});
 	});
 
-	router.post('/burgers/createOne', function(req, res) {
+	router.post('/burgers/insertOne', function(req, res) {
 		burgers.insertOne(['burger_name'], [req.body.burger], function(){
 			res.redirect('/burgers');
 		});
