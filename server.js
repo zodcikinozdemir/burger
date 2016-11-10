@@ -16,7 +16,7 @@ app.set('view engine', 'handlebars');
 
 app.use('/', routes);
 
-app.set('port', (process.env.PORT || 5500));
+app.set('port', (process.env.PORT || 5000));
 
 var server = app.listen(app.get('port'), function () {
     console.log("Listening on port %s...", server.address().port);
